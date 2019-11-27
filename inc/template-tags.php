@@ -44,7 +44,7 @@ function write_entry_meta() {
 	?>
 	<div class="entry-meta">
 		<span class="posted-on">
-		<?php printf( '<a href="%1$s" rel="bookmark"><time class="entry-date published updated" datetime="%2$s">%3$s</time></a>',
+		<?php printf( '<time class="entry-date published updated" datetime="%2$s">%3$s</time>',
 			esc_url( get_permalink() ),
 			esc_attr( get_the_date( 'c' ) ),
 			esc_html( get_the_date() )
