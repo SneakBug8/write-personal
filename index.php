@@ -16,10 +16,15 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
 
+	<?php if (is_home()): ?>
+		<div class="row">
+	<?php endif; ?>
+
 	<?php if ( have_posts() ) : ?>
 
-		<?php /* Start the Loop */ ?>
 		<?php while ( have_posts() ) : the_post(); ?>
+
+			<?php echo get_post_format(); ?>
 
 			<?php get_template_part( 'content', get_post_format() ); ?>
 
@@ -36,6 +41,10 @@ get_header(); ?>
 
 		<?php get_template_part( 'content', 'none' ); ?>
 
+	<?php endif; ?>
+
+	<?php if (is_home()): ?>
+	</div>
 	<?php endif; ?>
 
 	</main><!-- #main -->
