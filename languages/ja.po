@@ -1,0 +1,537 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Write Pro\n"
+"Report-Msgid-Bugs-To: http://themegraphy.com/contact/\n"
+"POT-Creation-Date: 2018-12-25 22:12+0900\n"
+"PO-Revision-Date: 2018-12-25 22:18+0900\n"
+"Last-Translator: Takao Utsumi <takao.utsumi@gmail.com>\n"
+"Language-Team: Takao Utsumi <takao.utsumi@gmail.com>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.2\n"
+
+#: 404.php:15
+msgid "That page can&rsquo;t be found."
+msgstr "ページが見つかりませんでした。"
+
+#: 404.php:19
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "ここには何も見つかりませんでした。検索を試してみますか？"
+
+#: archive.php:33 index.php:30 search.php:28
+msgid "&laquo; Previous"
+msgstr "&laquo; 前へ"
+
+#: archive.php:34 index.php:31 search.php:29
+msgid "Next &raquo;"
+msgstr "次へ &raquo;"
+
+#: comments.php:28
+msgid "1 Comment"
+msgstr "1件のコメント"
+
+#: comments.php:28
+msgid "% Comments"
+msgstr "%件のコメント"
+
+#: comments.php:34 comments.php:56
+msgid "Comment navigation"
+msgstr "コメントナビゲーション"
+
+#: comments.php:37 comments.php:59
+msgid "&larr; Older Comments"
+msgstr "&larr; 古いコメント"
+
+#: comments.php:38 comments.php:60
+msgid "Newer Comments &rarr;"
+msgstr "新しいコメント &rarr;"
+
+#: comments.php:72
+msgid "Comments are closed."
+msgstr "コメントはできません。"
+
+#: comments.php:76
+msgid "Leave a Comment"
+msgstr "コメントを残す"
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr "見つかりません"
+
+#: content-none.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"最初の投稿をする準備ができましたか？<a href=\"%1$s\">こちらからどうぞ</a>。"
+
+#: content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"キーワードに一致するコンテンツは見つかりませんでした。他のキーワードを試して"
+"みてください。"
+
+#: content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "お探しのものは見つからないようです。検索が助けとなるかもしれません。"
+
+#: content-page.php:22 content-single.php:22
+msgid "Pages:"
+msgstr "ページ："
+
+#: content-single.php:14 content.php:12
+msgid "Featured"
+msgstr "Featured"
+
+#: footer.php:27
+#, php-format
+msgid "Powered by <a href=\"%1$s\">%2$s</a>"
+msgstr "Powered by <a href=\"%1$s\">%2$s</a>"
+
+#: footer.php:27
+msgid "https://wordpress.org/"
+msgstr "https://ja.wordpress.org/"
+
+#: footer.php:29
+#, php-format
+msgid "Theme: <a href=\"%1$s\">%2$s</a> by %3$s"
+msgstr "Theme: <a href=\"%1$s\">%2$s</a> by %3$s"
+
+#. Theme URI of the plugin/theme
+#: footer.php:29
+msgid "http://themegraphy.com/wordpress-themes/write/"
+msgstr "http://themegraphy.com/ja/wordpress-themes/write/"
+
+#: functions.php:57
+msgid "Main Navigation"
+msgstr "メインナビゲーション"
+
+#: functions.php:58
+msgid "Footer Social Links"
+msgstr "フッターソーシャルリンク"
+
+#: functions.php:116
+msgid "Footer Left"
+msgstr "フッター左"
+
+#: functions.php:118
+msgid ""
+"Footer Left widget area is displayed on the left side of the footer. If you "
+"do not use the area, nothing will be displayed."
+msgstr ""
+"フッター左ウィジェットエリアはフッターの左側に表示されます。使用しない場合は"
+"表示されません。"
+
+#: functions.php:125
+msgid "Footer Right 1"
+msgstr "フッター右1"
+
+#: functions.php:127
+msgid ""
+"3 Footer Right widget areas are displayed on the right side of the footer, "
+"and the width is auto-adjusted based on how many you use. If you do not use "
+"the area, nothing will be displayed."
+msgstr ""
+"3つのフッター右ウィジェットエリアはフッターの右側に表示され、使用する数に"
+"よって幅は自動的に調整されます。1つも使用しない場合は表示されません。"
+
+#: functions.php:134
+msgid "Footer Right 2"
+msgstr "フッター右2"
+
+#: functions.php:142
+msgid "Footer Right 3"
+msgstr "フッター右3"
+
+#: functions.php:168
+msgctxt "Gentium Basic font: on or off"
+msgid "on"
+msgstr "off"
+
+#: functions.php:173
+msgctxt "Gentium Book Basic font: on or off"
+msgid "on"
+msgstr "off"
+
+#: functions.php:178
+msgctxt "Slabo 27px font: on or off"
+msgid "on"
+msgstr "off"
+
+#: functions.php:183
+msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
+msgid "no-subset"
+msgstr "no-subset"
+
+#: functions.php:359
+msgid "Page Title Display"
+msgstr "ページタイトルの表示"
+
+#: functions.php:383
+msgid "Hide Page Title"
+msgstr "ページタイトルを表示しない"
+
+#: header.php:20
+msgid "Skip to content"
+msgstr "コンテンツへスキップ"
+
+#: header.php:37
+msgid "Menu"
+msgstr "メニュー"
+
+#: inc/customizer.php:19
+msgid "Thank you for using the Write theme."
+msgstr "Writeテーマをご利用いただきありがとうございます。"
+
+#: inc/customizer.php:21
+msgid "Documentation"
+msgstr "マニュアル"
+
+#: inc/customizer.php:22
+msgid "For instructions on theme configuration, please see the documentation."
+msgstr "テーマの設定方法はマニュアルをご覧下さい。"
+
+#: inc/customizer.php:23
+msgid "http://themegraphy.com/documents/write/"
+msgstr "http://themegraphy.com/ja/documents/write/"
+
+#: inc/customizer.php:23
+msgid "Theme Documentation"
+msgstr "テーママニュアル"
+
+#: inc/customizer.php:25
+msgid "Support"
+msgstr "サポート"
+
+#: inc/customizer.php:26
+msgid ""
+"If there is something you don't understand even after reading the "
+"documentation, please use the support forum."
+msgstr ""
+"マニュアルを読んでも分からないことがあれば、サポートフォーラムよりお気軽にお"
+"問い合わせ下さい。"
+
+#: inc/customizer.php:27
+msgid "https://wordpress.org/support/theme/write"
+msgstr "https://ja.wordpress.org/support/forum/themes/"
+
+#: inc/customizer.php:27
+msgid "Support Forum"
+msgstr "サポートフォーラム"
+
+#: inc/customizer.php:29
+msgid "Review"
+msgstr "レビュー"
+
+#: inc/customizer.php:30
+msgid ""
+"If you are satisfied with the theme, we would greatly appreciate if you "
+"would review it."
+msgstr "テーマに満足したら、レビューをしていただけると幸いです。"
+
+#: inc/customizer.php:31
+msgid "https://wordpress.org/support/view/theme-reviews/write?filter=5"
+msgstr "https://wordpress.org/support/view/theme-reviews/write?filter=5"
+
+#: inc/customizer.php:31
+msgid "Review This Theme"
+msgstr "テーマをレビューする"
+
+#: inc/customizer.php:33
+msgid "Upgrade"
+msgstr "アップグレード"
+
+#: inc/customizer.php:34 inc/customizer.php:46
+msgid ""
+"If you would like even more features and/or 1-on-1 personal support, it is "
+"recommended you upgrade to Write Pro."
+msgstr ""
+"さらに多くの機能や1対1のサポートをご希望の場合は、Graphy Pro へのアップグ"
+"レードをおすすめします。"
+
+#: inc/customizer.php:35 inc/customizer.php:47
+msgid "http://themegraphy.com/wordpress-themes/write/#pro"
+msgstr "http://themegraphy.com/ja/wordpress-themes/write/#pro"
+
+#: inc/customizer.php:35
+msgid "Write Pro"
+msgstr "Write Pro"
+
+#: inc/customizer.php:47
+msgid "Upgrade to Write Pro"
+msgstr "Write Proにアップグレード"
+
+#: inc/customizer.php:49
+msgid "Fonts"
+msgstr "フォント"
+
+#: inc/customizer.php:50
+msgid ""
+"With Write Pro you can set the header and body text to a variety of fonts."
+msgstr "Write Proでは見出しと本文のフォントをそれぞれ設定することができます。"
+
+#: inc/customizer.php:53
+msgid "Featured Posts"
+msgstr "注目の投稿"
+
+#: inc/customizer.php:54
+msgid ""
+"With Write Pro you can set the posts that will be featured on the homepage "
+"slider as well as in the Write Featured Posts widget."
+msgstr ""
+"Write Proではブログホームページのスライダーおよび「Write 注目の投稿」ウィ"
+"ジェットで表示する投稿を設定することができます。"
+
+#: inc/customizer.php:57
+msgid "Two Columns"
+msgstr "2カラム"
+
+#: inc/customizer.php:58
+msgid ""
+"With Write Pro you can use Sidebar and Sticky Sidebar widget areas, so you "
+"can make two columns blog."
+msgstr ""
+"Write Proではサイドバー・固定サイドバーを使用することができ、2カラムのブログ"
+"を作ることができます。"
+
+#: inc/customizer.php:61
+msgid "Post Display"
+msgstr "投稿の表示"
+
+#: inc/customizer.php:62
+msgid ""
+"With Write Pro you can set how posts are displayed on the blog posts index "
+"page. You can also show/hide elements such as date, author name, comments "
+"number, featured image, categories, author profile, and post navigation."
+msgstr ""
+"Write Proではブログ一覧ページでの投稿の表示を設定することができます。また、"
+"日付・投稿者名・コメント数・アイキャッチ画像・カテゴリー・投稿者プロフィー"
+"ル・投稿ナビゲーションを表示/非表示にすることもできます。"
+
+#: inc/customizer.php:65
+msgid "Footer"
+msgstr "フッター"
+
+#: inc/customizer.php:66
+msgid ""
+"With Write Pro you can set the footer text and hide the theme credits. You "
+"can also set Footer Social Links and Footer Menu."
+msgstr ""
+"Write Proではフッターテキストを設定したり、クレジットを非表示にすることがで"
+"きます。また、フッターメニューを設定することができます。"
+
+#: inc/customizer.php:69
+msgid "Mail Support"
+msgstr "メールサポート"
+
+#: inc/customizer.php:70
+msgid ""
+"With Write Pro you can receive 1-on-1 personal support via email. Unlike "
+"forum support, your site and support information will not be visible to "
+"other people."
+msgstr ""
+"Write Proではメールによる1対1のサポートに対応しています。フォーラムによるサ"
+"ポートとは異なり、あなたのサイトやサポート内容が他の人に知られることはありま"
+"せん。"
+
+#: inc/customizer.php:83
+msgid "READ ME"
+msgstr "READ ME"
+
+#: inc/customizer.php:97
+msgid "UPGRADE"
+msgstr "アップグレード"
+
+#: inc/customizer.php:112
+msgid "Default"
+msgstr "デフォルト"
+
+#: inc/customizer.php:115
+msgid "----- Selected Fonts -----"
+msgstr "----- セレクトされたフォント -----"
+
+#: inc/customizer.php:138
+msgid "Japanese Sans"
+msgstr "日本語ゴシック体"
+
+#: inc/customizer.php:148
+msgid "Link Color"
+msgstr "リンクカラー"
+
+#: inc/customizer.php:157
+msgid "Link Hover Color"
+msgstr "リンクホバーカラー"
+
+#: inc/customizer.php:168
+msgid "Header Image Display"
+msgstr "ヘッダー画像の表示"
+
+#: inc/customizer.php:172 inc/customizer.php:225 inc/customizer.php:275
+#: inc/customizer.php:288
+msgid "Display on the blog posts index page"
+msgstr "ブログトップページに表示"
+
+#: inc/customizer.php:173 inc/customizer.php:276
+msgid "Display on all static pages"
+msgstr "全ての固定ページに表示"
+
+#: inc/customizer.php:174 inc/customizer.php:227 inc/customizer.php:277
+#: inc/customizer.php:290
+msgid "Display on the whole site"
+msgstr "サイト全体に表示"
+
+#: inc/customizer.php:181
+msgid "Home"
+msgstr "ホーム"
+
+#: inc/customizer.php:182
+msgid "HTML tags are allowed in the home text."
+msgstr "ホームテキストではHTMLタグが許可されています。"
+
+#: inc/customizer.php:190
+msgid "Home Text"
+msgstr "ホームテキスト"
+
+#: inc/customizer.php:200
+msgid "Font"
+msgstr "フォント"
+
+#: inc/customizer.php:211
+msgid "Font Size (px)"
+msgstr "フォントサイズ (px)"
+
+#: inc/customizer.php:221
+msgid "Home Text Display"
+msgstr "ホームテキストの表示"
+
+#: inc/customizer.php:226 inc/customizer.php:289
+msgid "Display on the static front page"
+msgstr "固定フロントページに表示"
+
+#: inc/customizer.php:238
+msgid "Hide Main Navigation"
+msgstr "メインナビゲーションを表示しない"
+
+#: inc/customizer.php:248
+msgid "Hide Search on Main Navigation"
+msgstr "メインナビゲーションの検索を表示しない"
+
+#: inc/extras.php:60
+msgid "Continue reading &rarr;"
+msgstr "続きを読む &rarr;"
+
+#: inc/google-fonts.php:11
+msgid "----- All Fonts -----"
+msgstr "----- 全てのフォント -----"
+
+#: inc/template-tags.php:64 inc/template-tags.php:69
+msgid ", "
+msgstr ", "
+
+#: inc/template-tags.php:120
+msgid "Post navigation"
+msgstr "投稿ナビゲーション"
+
+#: inc/template-tags.php:123
+msgid "Older post"
+msgstr "古い投稿"
+
+#: inc/template-tags.php:123
+msgctxt "Previous post link"
+msgid "%title"
+msgstr "%title"
+
+#: inc/template-tags.php:124
+msgid "Newer post"
+msgstr "新しい投稿"
+
+#: inc/template-tags.php:124
+msgctxt "Next post link"
+msgid "%title"
+msgstr "%title"
+
+#: inc/widgets.php:15
+msgid "Displays a profile with a photo and social media links."
+msgstr "写真やソーシャルリンクとともにプロフィールを表示します。"
+
+#: inc/widgets.php:16
+msgid "Write Profile"
+msgstr "Write プロフィール"
+
+#: inc/widgets.php:93
+msgid "Title:"
+msgstr "タイトル:"
+
+#: inc/widgets.php:96
+msgid "Profile Image URL:"
+msgstr "プロフィール画像のURL:"
+
+#: inc/widgets.php:99
+msgid "Name:"
+msgstr "名前:"
+
+#: inc/widgets.php:104
+msgid "Social Link 1:"
+msgstr "ソーシャルリンク1:"
+
+#: inc/widgets.php:106
+msgid "Social Link 2:"
+msgstr "ソーシャルリンク2:"
+
+#: inc/widgets.php:108
+msgid "Social Link 3:"
+msgstr "ソーシャルリンク3:"
+
+#: inc/widgets.php:110
+msgid "Social Link 4:"
+msgstr "ソーシャルリンク4:"
+
+#: inc/widgets.php:112
+msgid "Social Link 5:"
+msgstr "ソーシャルリンク5:"
+
+#: inc/widgets.php:114
+msgid "Social Link 6:"
+msgstr "ソーシャルリンク6:"
+
+#: inc/widgets.php:116
+msgid "Social Link 7:"
+msgstr "ソーシャルリンク7:"
+
+#: search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr "%sの検索結果"
+
+#. Theme Name of the plugin/theme
+msgid "Write"
+msgstr "Write"
+
+#. Description of the plugin/theme
+msgid ""
+"Write is a minimal WordPress theme for users focused on writing. It's "
+"designed to keep decorations to a minimum and put your writing in the "
+"spotlight. Write is compatible with WordPress 5.0."
+msgstr ""
+"Writeは文章を書く人のためのミニマルなWordPressテーマです。装飾を極限まで省い"
+"たデザインは、あなたの文章を主役にします。WriteはWordPress 5.0に対応していま"
+"す。"
+
+#. Author of the plugin/theme
+msgid "Themegraphy"
+msgstr "Themegraphy"
+
+#. Author URI of the plugin/theme
+msgid "http://themegraphy.com/"
+msgstr "http://themegraphy.com/ja/"
+
+#. Template Name of the plugin/theme
+msgid "Full Width"
+msgstr "全幅"
