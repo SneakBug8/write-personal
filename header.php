@@ -16,7 +16,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<?php if (have_posts()) : ?>
-		<?php while (have_posts()) : the_post(); ?>
+		<?php
+			$f = 0;
+			while (have_posts() && $f == 0) : the_post();
+				$f = 1;
+				?>
 
 			<meta property="og:title" content="<?php the_title() ?>" />
 			<meta property="og:type" content="article" />
@@ -31,7 +35,6 @@
 
 			<meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
 
-			<?php break; ?>
 		<?php endwhile; ?>
 
 	<?php endif; ?>

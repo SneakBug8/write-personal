@@ -142,7 +142,7 @@ input[type="submit"] {
 .home-text a,
 .author-profile-description a,
 .comment-content a,
-.post-full a {
+.bottom-block a {
     color: var(--link-color);
     border-bottom: 1px solid var(--link-color);
 }
@@ -150,6 +150,11 @@ input[type="submit"] {
 a:hover {
     color: var(--link-color-hover);
     border-color: var(--link-color-hover);
+}
+
+.bottom-block {
+    margin-top: 30px;
+    margin-bottom: 90px;
 }
 
 
@@ -711,6 +716,11 @@ body {
         min-height: 430px;
         width: 100%;
     }
+    @media only screen and (min-width: 732px) {
+        .content-area {
+            padding: 0 5%;
+        }
+    }
     .no-sidebar .hentry {
         position: relative;
     }
@@ -1176,7 +1186,6 @@ body {
 /* Entry Meta */
 
 .entry-footer {
-    color: #999;
     display: inline-block;
     margin-bottom: 8px;
     float: left;
@@ -1190,6 +1199,10 @@ body {
 
 .entry-meta {
     float: left;
+    color: #999;
+}
+
+.entry-footer a {
     color: #999;
 }
 
@@ -2558,4 +2571,9 @@ ul.grofile-urls {
 .space {
     width: 100%;
     margin-top: 30px;
+}
+
+#vk_subscribe,
+#vk_subscribe_1 {
+    margin: 1em 0;
 }

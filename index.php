@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The main template file.
  *
@@ -14,39 +15,29 @@
 get_header(); ?>
 
 <div id="primary" class="content-area">
-	<main id="main" class="site-main">
+	<main id="main" class="site-main
+	<?php echo (is_home()) ? "row" : ""; ?> <?php echo (is_single()) ? "single" : ""; ?>
+	">
+		<?php if (have_posts()) : ?>
 
-	<?php if (is_home()): ?>
-		<div class="row">
-	<?php endif; ?>
+			<?php while (have_posts()) : the_post(); ?>
 
-	<?php if ( have_posts() ) : ?>
+				<?php get_template_part('content', get_post_format()); ?>
 
-		<?php while ( have_posts() ) : the_post(); ?>
+			<?php endwhile; ?>
 
-			<?php echo get_post_format(); ?>
+			<?php
+				the_posts_pagination(array(
+					'prev_text' => esc_html__('&laquo; Previous', 'write'),
+					'next_text' => esc_html__('Next &raquo;', 'write'),
+				));
+				?>
 
-			<?php get_template_part( 'content', get_post_format() ); ?>
+		<?php else : ?>
 
-		<?php endwhile; ?>
+			<?php get_template_part('content', 'none'); ?>
 
-		<?php
-		the_posts_pagination( array(
-			'prev_text' => esc_html__( '&laquo; Previous', 'write' ),
-			'next_text' => esc_html__( 'Next &raquo;', 'write' ),
-		) );
-		?>
-
-	<?php else : ?>
-
-		<?php get_template_part( 'content', 'none' ); ?>
-
-	<?php endif; ?>
-
-	<?php if (is_home()): ?>
-	</div>
-	<?php endif; ?>
-
+		<?php endif; ?>
 	</main><!-- #main -->
 </div><!-- #primary -->
 

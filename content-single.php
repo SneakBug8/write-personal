@@ -7,6 +7,8 @@
  */
 ?>
 
+<script type="text/javascript" src="https://vk.com/js/api/openapi.js?162"></script>
+
 <?php if (function_exists("get_field") && get_field("redirect_url")) : ?>
 	<script>
 		window.location = "<?php the_field("redirect_url"); ?>"
@@ -28,17 +30,21 @@
 				<?php write_footer_meta(); ?>
 			</div><!-- .entry-float -->
 			<h1 class="entry-title"><?php the_title(); ?></h1>
-			<?php if (function_exists("get_field") && get_field("samag")) : ?>
+			<?php /* if (function_exists("get_field") && get_field("samag")) : ?>
 				<div id="vk_subscribe_1" style="margin-top:10px;"></div>
-			<?php endif; ?>
+			<?php else : */ ?>
+			<!-- VK Widget -->
+			<div id="vk_subscribe_1"></div>
+			<?php // endif; 
+			?>
 		</header><!-- .entry-header -->
 		<div class="entry-content">
 			<?php the_content(); ?>
 			<?php wp_link_pages(array('before' => '<div class="page-links">' . esc_html__('Pages:', 'write'), 'after'  => '</div>', 'pagelink' => '<span class="page-numbers">%</span>',)); ?>
 		</div><!-- .entry-content -->
 
-		<?php if (function_exists("get_field") && get_field("samag")) : ?>
-			<div style="margin-top:30px;margin-bottom:90px;">
+		<?php /* if (function_exists("get_field") && get_field("samag")) : ?>
+			<div class="bottom-block">
 				<script type="text/javascript" src="https://vk.com/js/api/openapi.js?162"></script>
 
 				<script type="text/javascript">
@@ -62,14 +68,24 @@
 
 				<?php endif; ?>
 			</div>
-		<?php else : ?>
+		<?php else : */ ?>
 
+		<?php /*
 			<div style="margin-top:30px;margin-bottom:90px;">
 				Вступай в <a href="https://vk.com/sb8blog">группу ВК</a><br>
 				Подписывайся на канал Telegram: <a href="https://tele.gs/sb8blog">@sb8blog</a>
 			</div>
+			*/ ?>
 
-		<?php endif; ?>
+		<div id="vk_subscribe"></div>
+
+		<script type="text/javascript">
+			VK.Widgets.Subscribe("vk_subscribe", {}, 110987254);
+			VK.Widgets.Subscribe("vk_subscribe_1", {}, 110987254);
+		</script>
+
+		<?php // endif;
+		?>
 
 		<?php // write_author_profile(); 
 		?>
