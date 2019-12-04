@@ -37,7 +37,7 @@
 		function_exists("get_field") && get_field("redirect_url")
 	) : ?>
 
-		<div class=" post-summary post-full-summary">
+		<div class="post-summary post-full-summary">
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<header class="entry-header">
 					<div class="clearfix">
@@ -47,7 +47,7 @@
 						<?php endif; ?>
 						<?php write_entry_meta(); ?>
 					</div>
-					<h2 class="entry-title"><a href="<?php the_field("redirect_url"); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+					<h2 class="entry-title"><a href="<?php the_field("redirect_url"); ?>" rel="bookmark" target="_blank"><?php the_title(); ?></a></h2>
 				</header><!-- .entry-header -->
 			</article><!-- #post-## -->
 		</div><!-- . post-summary -->

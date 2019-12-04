@@ -38,9 +38,11 @@ Tags: one-column, custom-colors, custom-header, custom-logo, custom-menu, editor
    This values are used for adjusting headings size (not for body size) */
 
 :root {
-    --link-color: #0089ff;
+    --link-color: #0067B8;
     --link-color-hover: #f41224;
-    --darker-red: #860914;
+    --header-color: #0067B8;
+    --light-grey: #F5F5F5;
+    --dark-grey: #e3e3e3;
 }
 
 html {
@@ -572,11 +574,18 @@ body {
     background-color: #fff;
 }
 
-.site {
+.site-content,
+.footer-widget-area,
+.site-bottom-table {
     margin-left: auto;
     margin-right: auto;
     max-width: 872px;
-    padding: 1em;
+}
+
+.site-content,
+.footer-widget-area,
+.site-bottom {
+    padding: 0 1em 0 1em;
 }
 
 .site-top {
@@ -616,14 +625,31 @@ body {
     margin-bottom: 60px;
 }
 
+.site-footer {
+    font-size: 0.9em;
+    background-color: var(--light-grey);
+
+}
+
 .footer-widget-area {
-    border-top: solid 1px #e6e6e6;
+    /* border-top: solid 1px #e6e6e6; */
     padding-top: 60px;
 }
 
 .site-bottom {
-    border-top: solid 1px #e6e6e6;
+    /* border-top: solid 1px #e6e6e6; */
+
     padding-top: 45px;
+    background-color: var(--dark-grey);
+}
+
+@media only screen and (min-width: 792px) {
+    .footer-widget>div {
+        border-right: solid 1px var(--dark-grey);
+    }
+    .footer-widget>div:last-child {
+        border-right: none;
+    }
 }
 
 @media screen and (min-width: 783px) {
@@ -664,7 +690,9 @@ body {
 }
 
 @media screen and (min-width: 980px) {
-    .site {
+    .site-content,
+    .footer-widget-area,
+    .site-bottom-table {
         max-width: 1035px;
     }
     .site-top {
@@ -846,6 +874,7 @@ body {
 
 .main-navigation {
     font-size: 0.9em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .main-navigation ul {
@@ -1048,6 +1077,10 @@ body {
 
 .footer-social-link li:first-child {
     padding-left: 0;
+}
+
+.nav-links {
+    margin-top: 1em;
 }
 
 
@@ -2169,6 +2202,8 @@ a.comment-edit-link:hover {
 
 /* Footer */
 
+
+/*
 .site-bottom {
     color: #999;
 }
@@ -2180,7 +2215,7 @@ a.comment-edit-link:hover {
 .site-bottom a:hover,
 .site-bottom .current-menu-item>a {
     color: #111;
-}
+} */
 
 .site-copyright,
 .site-credit {
@@ -2478,7 +2513,8 @@ ul.grofile-urls {
 }
 
 .site-top {
-    border: 10px solid var(--darker-red);
+    /* border: 10px solid var(--header-color); */
+    background-color: var(--light-grey);
     padding: 1em;
 }
 
@@ -2554,6 +2590,14 @@ ul.grofile-urls {
     float: right;
     margin: 0;
     margin-left: 1em;
+}
+
+.topmenu .fa-circle {
+    color: white;
+}
+
+.topmenu .fa-stack-1x {
+    color: black;
 }
 
 .topmenu a {

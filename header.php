@@ -18,9 +18,7 @@
 	<?php if (have_posts()) : ?>
 		<?php
 			$f = 0;
-			while (have_posts() && $f == 0) : the_post();
-				$f = 1;
-				?>
+			while (have_posts()) : the_post();	?>
 
 			<meta property="og:title" content="<?php the_title() ?>" />
 			<meta property="og:type" content="article" />
@@ -35,7 +33,9 @@
 
 			<meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
 
-		<?php endwhile; ?>
+			<?php break; ?>
+		<?php endwhile;
+			rewind_posts(); ?>
 
 	<?php endif; ?>
 
@@ -43,13 +43,29 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<div class="topmenu">
-		<ul class="clearfix">
-			<li><a href="https://tele.gs/sb8blog">Telegram канал</a></li>
-			<li><a href="https://vk.com/samag">Группа ВК</a></li>
-		</ul>
-	</div>
 	<div id="page" class="hfeed site">
+		<div class="topmenu">
+			<ul class="clearfix">
+				<li><a href="https://twitter.com/SneakBug8">
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-twitter fa-stack-1x"></i>
+						</span>
+					</a></li>
+				<li><a href="https://tele.gs/sb8blog">
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-telegram fa-stack-1x"></i>
+						</span>
+					</a></li>
+				<li><a href="https://vk.com/sb8blog">
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-vk fa-stack-1x"></i>
+						</span>
+					</a></li>
+			</ul>
+		</div>
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'write'); ?></a>
 		<?php // if (get_post_type() !== "post" || is_home() || is_archive()): 
 		?>

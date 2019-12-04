@@ -10,15 +10,24 @@ if (!function_exists('disable_emojis')) :
 
 	function disable_emojis()
 	{
-		remove_action('wp_head', 'print_emoji_detection_script', 7);
-		remove_action('admin_print_scripts', 'print_emoji_detection_script');
-		remove_action('wp_print_styles', 'print_emoji_styles');
-		remove_action('admin_print_styles', 'print_emoji_styles');
-		remove_filter('the_content_feed', 'wp_staticize_emoji');
-		remove_filter('comment_text_rss', 'wp_staticize_emoji');
-		remove_filter('wp_mail', 'wp_staticize_emoji_for_email');
-		add_filter('tiny_mce_plugins', 'disable_emojis_tinymce');
-		add_filter('tiny_mce_plugins', 'disable_emojicons_tinymce');
+		if (function_exists('print_emoji_detection_script'))
+			remove_action('wp_head', 'print_emoji_detection_script', 7);
+		if (function_exists('print_emoji_detection_script'))
+			remove_action('admin_print_scripts', 'print_emoji_detection_script');
+		if (function_exists('print_emoji_styles'))
+			remove_action('wp_print_styles', 'print_emoji_styles');
+		if (function_exists('print_emoji_styles'))
+			remove_action('admin_print_styles', 'print_emoji_styles');
+		if (function_exists('wp_staticize_emoji'))
+			remove_filter('the_content_feed', 'wp_staticize_emoji');
+		if (function_exists('wp_staticize_emoji'))
+			remove_filter('comment_text_rss', 'wp_staticize_emoji');
+		if (function_exists('wp_staticize_emoji_for_email'))
+			remove_filter('wp_mail', 'wp_staticize_emoji_for_email');
+		if (function_exists('disable_emojis_tinymce'))
+			add_filter('tiny_mce_plugins', 'disable_emojis_tinymce');
+		if (function_exists('disable_emojicons_tinymce'))
+			add_filter('tiny_mce_plugins', 'disable_emojicons_tinymce');
 		// add_filter( 'wp_resource_hints', 'disable_emojis_remove_dns_prefetch', 10, 2 );
 	}
 
@@ -267,6 +276,8 @@ function write_scripts()
 	wp_enqueue_style('write-font', esc_url(write_fonts_url()), array(), null);
 	wp_enqueue_style('normalize', get_template_directory_uri() . '/css/normalize.css',  array(), '8.0.0');
 	wp_enqueue_style('write-style', get_stylesheet_uri(), array(), '2.1.2');
+
+	wp_enqueue_style('font-awesome', esc_url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"), array(), "4.7.0");
 
 
 	wp_enqueue_script('write-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20160525', true);
