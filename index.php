@@ -15,9 +15,7 @@
 get_header(); ?>
 
 <div id="primary" class="content-area">
-	<main id="main" class="site-main
-	<?php echo (is_home()) ? "row" : ""; ?> <?php echo (is_single()) ? "single" : ""; ?>
-	">
+	<main id="main" class="site-main">
 		<?php if (have_posts()) : ?>
 
 			

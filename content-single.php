@@ -39,16 +39,33 @@
 				<div id="vk_subscribe_1" style="margin-top:10px;"></div>
 			<?php else : */ ?>
 				<!-- VK Widget -->
-				<div id="vk_subscribe_1"></div>
 				<?php // endif; 
-					?>
+				?>
 			</header><!-- .entry-header -->
 			<div class="entry-content">
 				<?php the_content(); ?>
-				<?php wp_link_pages(array('before' => '<div class="page-links">' . esc_html__('Pages:', 'write'), 'after'  => '</div>', 'pagelink' => '<span class="page-numbers">%</span>',)); ?>
-			</div><!-- .entry-content -->
 
-			<?php /* if (function_exists("get_field") && get_field("samag")) : ?>
+				<div class="subscribe-buttons">
+					<div>
+						<div id="vk_subscribe"></div>
+					</div>
+					<div>
+						<a href="https://twitter.com/SneakBug8?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-lang="ru" data-show-count="false">
+							Читать @SneakBug8
+						</a>
+					</div>
+					<div>
+						<a style="font-size:16px;font-weight:500;text-align:center;border-radius:8px;padding:5px;background:#389ce9;text-decoration:none;color:#fff;" href="https://tele.gs/sb8blog" target="_blank">
+							<i class="fa fa-paper-plane"></i> Подписаться в Telegram
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<?php wp_link_pages(array('before' => '<div class="page-links">' . esc_html__('Pages:', 'write'), 'after'  => '</div>', 'pagelink' => '<span class="page-numbers">%</span>',)); ?>
+	</div><!-- .entry-content -->
+
+	<?php /* if (function_exists("get_field") && get_field("samag")) : ?>
 			<div class="bottom-block">
 				<script type="text/javascript" src="https://vk.com/js/api/openapi.js?162"></script>
 
@@ -75,27 +92,46 @@
 			</div>
 		<?php else : */ ?>
 
-			<?php /*
+	<?php /*
 			<div style="margin-top:30px;margin-bottom:90px;">
 				Вступай в <a href="https://vk.com/sb8blog">группу ВК</a><br>
 				Подписывайся на канал Telegram: <a href="https://tele.gs/sb8blog">@sb8blog</a>
 			</div>
 			*/ ?>
 
-			<div id="vk_subscribe"></div>
+	<!-- <div id="vk_subscribe"></div> -->
 
-			<script type="text/javascript">
-				VK.Widgets.Subscribe("vk_subscribe", {}, 110987254);
-				VK.Widgets.Subscribe("vk_subscribe_1", {}, 110987254);
-			</script>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-			<?php // endif;
-				?>
+	<?php // endif;
+	?>
 
-			<?php // write_author_profile(); 
-				?>
+	<?php // write_author_profile(); 
 
-		</article><!-- #post-## -->
+	?>
+
+	<?php
+	// If comments are open or we have at least one comment, load up the comment template.
+	/*if (comments_open() || get_comments_number()) :
+		comments_template();
+	endif; */
+	?>
+
+	</article><!-- #post-## -->
+
+	<!-- Put this script tag to the <head> of your page -->
+	<script type="text/javascript" src="https://vk.com/js/api/openapi.js?162"></script>
+
+	<script type="text/javascript">
+		VK.init({
+			apiId: 7003744,
+			onlyWidgets: true
+		});
+		VK.Widgets.Subscribe("vk_subscribe", {
+			soft: 1
+		}, -124057313);
+	</script>
+
 	</div><!-- .post-full -->
 
 <?php endif; ?>

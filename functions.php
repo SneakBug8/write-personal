@@ -278,7 +278,7 @@ function write_scripts()
 	wp_enqueue_style('write-style', get_stylesheet_uri(), array(), '2.1.2');
 
 	wp_enqueue_style('font-awesome', esc_url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"), array(), "4.7.0");
-
+	wp_enqueue_style('emoji', esc_url("https://emoji-css.afeld.me/emoji.css"));
 
 	wp_enqueue_script('write-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20160525', true);
 	if (!get_theme_mod('write_hide_navigation')) {
@@ -441,3 +441,13 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+function lastsent($atts, $content)
+{
+	return "<div class='col-sm-12 col-md-6'>" .
+	$atts["date"] . " <a href=" . $atts["url"] . ">" . $content . "</a>
+	</div>";
+}
+
+
+add_shortcode("lastsent", 'lastsent');

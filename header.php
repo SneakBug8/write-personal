@@ -15,30 +15,6 @@
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<?php if (have_posts()) : ?>
-		<?php
-			$f = 0;
-			while (have_posts()) : the_post();	?>
-
-			<meta property="og:title" content="<?php the_title() ?>" />
-			<meta property="og:type" content="article" />
-
-			<?php if (!is_home()) : ?>
-				<meta property="og:article:published_time" content="<?php the_date() ?>" />
-				<meta property="og:article:author" content="<?php the_author() ?>" />
-				<?php if (has_post_thumbnail()) : ?>
-					<meta property="og:image" content="<?php echo get_the_post_thumbnail_url() ?>" />
-				<?php endif; ?>
-			<?php endif; ?>
-
-			<meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
-
-			<?php break; ?>
-		<?php endwhile;
-			rewind_posts(); ?>
-
-	<?php endif; ?>
-
 	<?php wp_head(); ?>
 </head>
 

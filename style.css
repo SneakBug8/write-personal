@@ -81,12 +81,22 @@ h3,
 h4,
 h5,
 h6,
+.site-title,
+.btn {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 .site-title {
     clear: both;
     color: #111;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
-    line-height: 1.4;
 }
 
 h1 {
@@ -144,7 +154,8 @@ input[type="submit"] {
 .home-text a,
 .author-profile-description a,
 .comment-content a,
-.bottom-block a {
+.bottom-block a,
+.nav-links a {
     color: var(--link-color);
     border-bottom: 1px solid var(--link-color);
 }
@@ -335,79 +346,6 @@ embed,
 iframe,
 object {
     max-width: 100%;
-}
-
-
-/* Form */
-
-button,
-input,
-input[type="search"],
-select,
-textarea {
-    background-color: #fff;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    max-width: 100%;
-}
-
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-    background-color: #e6e6e6;
-    border-bottom: solid 1px #ccc;
-    border-left: solid 1px #ddd;
-    border-right: solid 1px #ccc;
-    border-top: solid 1px #ddd;
-    font-size: 87.5%;
-    line-height: 1;
-    padding: 0.9em 1.5em;
-    text-shadow: 1px 1px 0 #fff;
-    text-transform: uppercase;
-    transition: .15s ease-in-out;
-}
-
-button:hover,
-button:focus,
-input[type="button"]:hover,
-input[type="button"]:focus,
-input[type="reset"]:hover,
-input[type="reset"]:focus,
-input[type="submit"]:hover,
-input[type="submit"]:focus {
-    background-color: #ededed;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-textarea {
-    border: solid 1px #e6e6e6;
-    color: #777;
-    margin-top: 0.4em;
-    padding: 0.6em;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-textarea:focus {
-    color: #444;
-}
-
-select {
-    padding: 0.4em;
-}
-
-textarea {
-    max-width: 700px;
-    width: 100%;
 }
 
 
@@ -628,7 +566,6 @@ body {
 .site-footer {
     font-size: 0.9em;
     background-color: var(--light-grey);
-
 }
 
 .footer-widget-area {
@@ -638,7 +575,6 @@ body {
 
 .site-bottom {
     /* border-top: solid 1px #e6e6e6; */
-
     padding-top: 45px;
     background-color: var(--dark-grey);
 }
@@ -906,6 +842,30 @@ body {
 .main-navigation .search-form,
 .main-navigation .search-submit {
     display: none;
+}
+
+.drawer-hamburger.drawer-toggle {
+    background-color: white;
+    ;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    top: 2px;
+    right: 2px;
+}
+
+.drawer-open .drawer-nav {
+    background-color: var(--light-grey)!important;
+}
+
+.drawer-hamburger:hover,
+.drawer-hamburger:focus {
+    background-color: var(--light-grey)!important;
+}
+
+.drawer-hamburger .drawer-hamburger-icon {
+    margin-top: 0;
 }
 
 @media screen and (min-width: 783px) {
@@ -1375,25 +1335,19 @@ a.continue-reading {
 .cat-links,
 .tags-links {
     float: right;
+    margin-left: 1em;
 }
 
-.cat-links:before,
-.tags-links:before {
-    color: #ddd;
-    display: inline-block;
-    font: normal 28px/1 Genericons;
-    -webkit-font-smoothing: antialiased;
-    position: relative;
-    top: -2px;
-    vertical-align: middle;
-}
-
-.cat-links:before {
-    content: "\f301";
-}
-
-.tags-links:before {
-    content: "\f302";
+@media only screen and (max-width: 792px) {
+    .entry-footer-meta {
+        float: left;
+        clear: both;
+    }
+    .cat-links,
+    .tags-links {
+        margin: 0;
+        margin-right: 1em;
+    }
 }
 
 
@@ -2220,7 +2174,7 @@ a.comment-edit-link:hover {
 .site-copyright,
 .site-credit {
     font-size: 87.5%;
-    margin-bottom: 12px;
+    padding-bottom: 12px;
 }
 
 .site-credit-sep {
@@ -2592,6 +2546,14 @@ ul.grofile-urls {
     margin-left: 1em;
 }
 
+@media only screen and (max-width: 792px) {
+    .topmenu ul li {
+        float: left;
+        margin: 0;
+        margin-right: 1em;
+    }
+}
+
 .topmenu .fa-circle {
     color: white;
 }
@@ -2617,7 +2579,39 @@ ul.grofile-urls {
     margin-top: 30px;
 }
 
-#vk_subscribe,
 #vk_subscribe_1 {
     margin: 1em 0;
+}
+
+.vkcomments {
+    margin-top: 1em;
+}
+
+.subscribe-buttons div {
+    margin: 0.25em 0;
+}
+
+body .btn {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    text-align: center;
+    padding: 1em;
+    border-bottom: 0;
+    color: white;
+    margin-top: 5px;
+}
+
+body .btn:hover {
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 792px) {
+    .col-insider {
+        padding: 5px 0;
+    }
 }
